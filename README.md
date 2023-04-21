@@ -11,7 +11,7 @@ This app is connected to a FastAPI backend running on AWS lambda. To see the bac
 ## Deployment
 This project is deployed as a static web app using AWS S3, AWS Route 53, AWS Certificate Manager and AWS Cloudfront.
 
-- TODO: Checkout the web app here: https://futsta.thijss.nl
+- Checkout the web app here: https://futsta.thijss.nl
 - TODO: Checkout [DEPLOYMENT](docs/DEPLOYMENT.md) for a detailed guide on how to deploy the web app on AWS.
 
 
