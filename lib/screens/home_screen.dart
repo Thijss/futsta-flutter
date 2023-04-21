@@ -14,10 +14,10 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(dotenv.env['TEAM_NAME']!,
-                style: const TextStyle(fontSize: 50)),
+                style: const TextStyle(fontSize: 30)),
             Text(
               currentSeason(),
-              style: const TextStyle(fontSize: 30),
+              style: const TextStyle(fontSize: 20),
             ),
             const SizedBox(height: 40),
             Image.asset(
