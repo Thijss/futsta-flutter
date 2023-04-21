@@ -17,3 +17,8 @@ This project is deployed as a static web app using AWS S3, AWS Route 53, AWS Cer
 Building this app, I've used ChatGPT-4 a lot. Given that this is my first Flutter/Dart project, much of the Dart syntax/Flutter Framework was new to me.
 
 By asking ChatGPT-4 question like: "Explain this Flutter concept to me" or "Build a flutter screen with three buttons aligned to the left" development sped up and I learned a lot on the way.
+
+## Roadmap/ToDo's
+
+- Add documentation for deployment
+- Add tests
