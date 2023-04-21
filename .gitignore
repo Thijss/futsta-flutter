@@ -50,4 +50,4 @@ app.*.map.json
 assets
 
 # custom bash script for syncing with aws S3
-sync.sh
+deploy.sh
