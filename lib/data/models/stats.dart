@@ -25,8 +25,8 @@ class PlayerStat {
     } else {
       suffix = '';
     }
-    String statOrUnknown = stat != -1 ? stat.toString() : "?";
+    String statOrUnknown = stat != -1 ? '$stat ${statType.name}$suffix' : "???";
 
-    return '$statOrUnknown ${statType.name}$suffix';
+    return statOrUnknown;
   }
 }
