@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     const Color primaryColor = Color.fromARGB(222, 11, 110, 155);
     // const Color primaryColor = Color.fromARGB(103, 100, 255, 219);
     return MaterialApp(
-      title: 'Match Tracker',
+      title: 'Futsta',
       initialRoute: '/',
       routes: {
         '/': (context) => const HomeScreen(),
