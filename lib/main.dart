@@ -4,7 +4,7 @@ import 'package:futsta/screens/home_Screen.dart';
 import 'package:futsta/screens/list_matches_screen.dart';
 
 import 'package:flutter/material.dart';
-import 'package:futsta/screens/stats/top_scores_screen.dart';
+import 'package:futsta/screens/stats/player_stats_screen.dart';
 
 void main() async {
   await dotenv.load();
