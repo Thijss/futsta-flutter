@@ -89,3 +89,11 @@ String toOrdinal(int n) {
       return '${n}th';
   }
 }
+
+String currentSeason() {
+  final now = DateTime.now();
+  final year = now.year;
+  final month = now.month;
+  final season = month >= 8 ? year : year - 1;
+  return '$season - ${season + 1}';
+}

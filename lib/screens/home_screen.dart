@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
+import '../utils/helpers.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -10,6 +13,13 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text(dotenv.env['TEAM_NAME']!,
+                style: const TextStyle(fontSize: 50)),
+            Text(
+              currentSeason(),
+              style: const TextStyle(fontSize: 30),
+            ),
+            const SizedBox(height: 40),
             Image.asset(
               'assets/club_logo.png',
               width: 200, // Set the width of the image
