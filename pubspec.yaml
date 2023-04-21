@@ -33,12 +33,7 @@ dev_dependencies:
   flutter_lints: ^2.0.1
 
 flutter_icons:
-  android: true
   image_path: "assets/launcher_icon.png"
-  min_sdk_android: 21
-  macos:
-    generate: true
-    image_path: "assets/launcher_icon.png"
   web:
     generate: true
     image_path: "assets/launcher_icon.png"

@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:futsta/data/models/matches.dart';
 import 'package:futsta/data/repositories/goals.dart';
 import 'package:futsta/screens/add_goal_screen.dart';
@@ -106,7 +107,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
   Row showTeams(FutsalMatch match) {
     String homeTeam;
     String awayTeam;
-    const String teamName = "DES Adamsnood 1";
+    final String teamName = dotenv.env['TEAM_NAME']!;
     if (match.isHome) {
       homeTeam = teamName;
       awayTeam = match.opponent.name;
