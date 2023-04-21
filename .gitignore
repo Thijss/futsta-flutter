@@ -48,3 +48,6 @@ app.*.map.json
 
 # assets
 assets
+
+# custom bash script for syncing with aws S3
+sync.sh
