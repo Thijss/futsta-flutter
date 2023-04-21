@@ -1,8 +1,8 @@
 import 'package:futsta/data/models/players.dart';
 
 enum StatType {
-  goals,
-  assists,
+  goal,
+  assist,
 }
 
 class PlayerStat {
@@ -16,5 +16,17 @@ class PlayerStat {
       player: Player.fromJson(json['player']),
       stat: json['count'],
     );
+  }
+
+  String statAsString(StatType statType) {
+    String suffix;
+    if (stat != 1) {
+      suffix = 's';
+    } else {
+      suffix = '';
+    }
+    String stat_or_unknown = stat != -1 ? stat.toString() : "?";
+
+    return '$stat_or_unknown ${statType.name}$suffix';
   }
 }

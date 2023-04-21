@@ -23,7 +23,6 @@ class PlayerStatsWidget extends StatelessWidget {
         itemCount: playerStats.length,
         itemBuilder: (BuildContext context, int index) {
           final playerStat = playerStats[index];
-
           Color backgroundColor;
           backgroundColor = index == 0
               ? Colors.amber
@@ -38,7 +37,7 @@ class PlayerStatsWidget extends StatelessWidget {
             child: ListTile(
               title: Text('${index + 1}. ${playerStat.player.name}',
                   style: const TextStyle(color: Colors.black)),
-              trailing: Text('${playerStat.stat} ${statType.name}',
+              trailing: Text(playerStat.statAsString(statType),
                   style: const TextStyle(color: Colors.black)),
             ),
           );

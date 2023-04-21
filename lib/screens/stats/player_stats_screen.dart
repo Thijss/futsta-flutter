@@ -11,9 +11,9 @@ abstract class PlayerStatsState<T extends StatefulWidget> extends State<T> {
 
   Future<void> _loadPlayerStats(StatType statType) async {
     Future<List<PlayerStat>> Function() getStats;
-    if (statType == StatType.goals) {
+    if (statType == StatType.goal) {
       getStats = statsRepository.getTopGoals;
-    } else if (statType == StatType.assists) {
+    } else if (statType == StatType.assist) {
       getStats = statsRepository.getTopAssists;
     } else {
       throw Exception('Invalid stat type');
@@ -44,15 +44,13 @@ class PlayerGoalsScreenState extends PlayerStatsState<PlayerGoalsScreen> {
   @override
   void initState() {
     super.initState();
-    _loadPlayerStats(StatType.goals);
+    _loadPlayerStats(StatType.goal);
   }
 
   @override
   Widget build(BuildContext context) {
     return PlayerStatsWidget(
-        playerStats: playerStats,
-        title: "Top Scores",
-        statType: StatType.goals);
+        playerStats: playerStats, title: "Top Scores", statType: StatType.goal);
   }
 }
 
@@ -67,7 +65,7 @@ class PlayerAssistsScreenState extends PlayerStatsState<PlayerAssistsScreen> {
   @override
   void initState() {
     super.initState();
-    _loadPlayerStats(StatType.assists);
+    _loadPlayerStats(StatType.assist);
   }
 
   @override
@@ -75,6 +73,6 @@ class PlayerAssistsScreenState extends PlayerStatsState<PlayerAssistsScreen> {
     return PlayerStatsWidget(
         playerStats: playerStats,
         title: "Top Assists",
-        statType: StatType.assists);
+        statType: StatType.assist);
   }
 }
