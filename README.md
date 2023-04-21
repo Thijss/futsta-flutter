@@ -12,8 +12,6 @@ This app is connected to a FastAPI backend running on AWS lambda. To see the bac
 This project is deployed as a static web app using AWS S3, AWS Route 53, AWS Certificate Manager and AWS Cloudfront.
 
 - Checkout the web app here: https://futsta.thijss.nl
-- TODO: Checkout [DEPLOYMENT](docs/DEPLOYMENT.md) for a detailed guide on how to deploy the web app on AWS.
-
 
 ## Acknowledgements
 Building this app, I've used ChatGPT-4 a lot. Given that this is my first Flutter/Dart project, much of the Dart syntax/Flutter Framework was new to me.
